@@ -18,6 +18,17 @@ class RobotsController < ApplicationController
     redirect_to robot_path(@robot)
   end
 
+  def edit
+      @robot = Robot.find(params[:id])
+  end
+
+  def update
+      @robot = Robot.find(params[:id])
+      @robot.update
+
+      redirect_to robot_path(@robot)
+  end
+
 private
   def robot_params
     params.require(:robot).permit(:name, :slogan)
