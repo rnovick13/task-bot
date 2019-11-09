@@ -1,0 +1,5 @@
+Robot.create(name: "Gigabit", slogan: "Only my army of killer robots understands me...")
+Robot.create(name: "Rob Bitt", slogan: "I am not a simple Computer.")
+Robot.create(name: "Screwie", slogan: "I'm still in beta...")
+Robot.create(name: "Optimus Primates RULE!")
+Robot.create(name: "Databorg", slogan: "I am borg.")
