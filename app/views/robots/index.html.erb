@@ -1,0 +1,5 @@
+<ul>
+  <% @robots.each do |robot| %>
+    <li><%= link_to robot.name, robot_path(robot) %></li>
+  <% end %>
+</ul>
