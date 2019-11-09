@@ -19,14 +19,14 @@ class RobotsController < ApplicationController
   end
 
   def edit
-      @robot = Robot.find(params[:id])
+    @robot = Robot.find(params[:id])
   end
 
   def update
-      @robot = Robot.find(params[:id])
-      @robot.update
+    @robot = Robot.find(params[:id])
+    @robot.update
 
-      redirect_to robot_path(@robot)
+    redirect_to robot_path(@robot)
   end
 
   def destroy

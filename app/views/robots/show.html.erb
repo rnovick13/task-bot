@@ -3,4 +3,4 @@
 
 <%= button_to "All Robots", robots_path, method: :get %>
 <%= button_to "Edit Robot", edit_robot_path(@robot), method: :get %>
-<%= button_to "Remove Robot", robot_path(@robot), method: 'delete', data: {confirm: 'Are you sure?'} %>
+<%= button_to 'Remove Robot', robot_path(@robot), method: 'delete', data: { confirm: 'Are you sure?' } %>
