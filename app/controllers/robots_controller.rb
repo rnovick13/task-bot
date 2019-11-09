@@ -29,6 +29,13 @@ class RobotsController < ApplicationController
       redirect_to robot_path(@robot)
   end
 
+  def destroy
+      @robot = Robot.find(params[:id])
+      @robot.destroy
+
+      redirect_to robots_path
+  end
+
 private
   def robot_params
     params.require(:robot).permit(:name, :slogan)
